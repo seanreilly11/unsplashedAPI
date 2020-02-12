@@ -17,8 +17,8 @@ $(document).ready(function(){
 function successAjax(data){
 	for(var i = 0; i < data.length; i++){
 		document.getElementById("output").innerHTML += "<div class='col col-md-4 col-xl-2 col-sm-6'><h1>" + data[i].name + "</h1>"
-		+ "<p>" + data[i].cost + "</p>"
-		+ "<p class='lead'>" + data[i].creator + "</p>"
+		+ "<p>Price: " + data[i].cost + "</p>"
+		+ "<p class='lead'>Creator: " + data[i].creator + "</p>"
 		+ "<p class='lead'>" + data[i].origin + "</p></div>";
 	}
 }
